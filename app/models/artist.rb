@@ -61,4 +61,8 @@ class Artist
       gallery.city
     end
   end
+  
+  def self.most_prolific
+    
+  end
 end
