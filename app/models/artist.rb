@@ -63,6 +63,6 @@ class Artist
   end
   
   def self.most_prolific
-    artists.max { |a1, a2| a1.paintings / a1.years_experience <=> p2.price }
+    artists.max { |a1, a2| a1.paintings.count / a1.years_experience <=> a2.paintings.count / a2.years_experience }
   end
 end
