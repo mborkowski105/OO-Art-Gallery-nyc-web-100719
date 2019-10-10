@@ -63,6 +63,6 @@ class Artist
   end
   
   def self.most_prolific
-    
+    paintings.max { |p1, p2| p1.price <=> p2.price }
   end
 end
